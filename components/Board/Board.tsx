@@ -203,7 +203,7 @@ const Board = () => {
       if (activeCard)
         return (
           <TaskCard
-            className='bg-slate-900 opacity-85'
+            className='dark:bg-zinc-900 opacity-85'
             id={activeCard?.id}
             title={activeCard?.title}
             description={activeCard?.description}

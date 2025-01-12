@@ -25,7 +25,7 @@ const TaskCard = (props: Task & ComponentPropsWithRef<'div'>) => {
       ref={setNodeRef}
       style={style}
       className={cn(
-        'bg-slate-700 rounded-lg p-2 min-h-14 flex items-center cursor-grab',
+        'bg-white dark:bg-zinc-700 rounded-lg p-2 min-h-14 flex items-center cursor-grab',
         className
       )}
       {...attributes}
@@ -35,7 +35,7 @@ const TaskCard = (props: Task & ComponentPropsWithRef<'div'>) => {
       {isDragging ? (
         <div className='border border-gray-300 w-full'></div>
       ) : (
-        <div className='flex flex-col'>
+        <div className='flex flex-col text-black dark:text-white'>
           <span className='text-sm mb-2'>{title}</span>
           <span className='text-xs'>{description}</span>
         </div>
