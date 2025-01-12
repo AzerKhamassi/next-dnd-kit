@@ -47,8 +47,8 @@ const Column = (props: ColumnProps) => {
 
   return (
     <div ref={setNodeRef}>
-      <div className='bg-slate-800 rounded-lg w-60 p-2 px-3'>
-        <div className='flex justify-between  border-b-2 border-slate-600 pb-1'>
+      <div className='bg-slate-800 dark:bg-zinc-800 rounded-lg w-60 p-2 px-3'>
+        <div className='flex justify-between  border-b-2 border-slate-600 dark:border-zinc-600 pb-1'>
           <span className='text-sm font-semibold text-neutral-100'>{id}</span>
           <span className='text-sm font-semibold text-neutral-100'>
             ({items.length})
@@ -57,8 +57,7 @@ const Column = (props: ColumnProps) => {
         <div className='flex flex-col gap-2 my-3'>{children}</div>
 
         <Button
-          className='w-full rounded-lg bg-transparent border border-slate-200'
-          variant={'default'}
+          className='w-full rounded-lg bg-transparent dark:bg-transparent border dark:text-white dark:hover:bg-zinc-900 border-slate-200'
           onClick={toggleAddModalHandler}
         >
           + Task
